@@ -1,0 +1,199 @@
+//for Empty basket
+.empty-bas {
+  height: 80vh;
+  background-color: $light-gray;
+}
+.empty-bas > div {
+  margin: 0% 4%;
+  > div {
+    @include flex(column, center);
+    height: 55vh;
+    gap: 15px;
+    color: #bdbdbd;
+  }
+}
+.addp-basket{
+  cursor: pointer;
+}
+.embas-cont {
+  background-color: white;
+  border-radius: 6px;
+}
+.basket-header {
+  padding-top: 30px;
+  margin: 0% 0%;
+  padding-bottom: 15px;
+}
+.basket-link {
+  width: 70%;
+  padding: 13px 0px;
+  text-align: center;
+  border-radius: 8px;
+  list-style: none;
+  color: white;
+  background-color: $green-color;
+  text-decoration: none;
+  border: none;
+}
+//for Full basket
+.fbasket {
+  height: 100vh;
+  background-color: $light-gray;
+  > div {
+    margin: 0% 4%;
+  }
+  
+}
+.fbasket-header {
+  padding-top: 30px;
+  margin: 0% 6%;
+  padding-bottom: 15px;
+}
+.fbasket-sale {
+  margin-left: 6%;
+}
+.fbasket-cont {
+  // display: grid;
+  // grid-template-columns: 5fr 1fr;
+  @include flex(row, center);
+  >:nth-child(1){
+    max-height: 700px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  >:nth-child(1)::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+}
+.fbassm-none {
+  display: none;
+}
+.fbasket-cards {
+  background-color: white;
+  border-radius: 8px;
+  padding: 4%;
+  margin: 4% 0%;
+  position: relative;
+  .del-basket {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+  }
+  .fbasket-img {
+    @include flex(row, center);
+  }
+  .fbasket-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fbasket-counter {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    @include flex(row, center);
+    span {
+      margin: 60%;
+    }
+  }
+}
+.pr-counter{
+  >:nth-child(odd){
+    cursor: pointer;
+  }
+}
+@include lg {
+  .empty-bas {
+    height: 90vh;
+  }
+  .empty-bas > div {
+    > div {
+      height: 65vh;
+    }
+  }
+  .basket-header {
+    padding: 35px 0px;
+  }
+  .basket-link {
+    width: 20%;
+  }
+  //for Full basket
+  .fbasket {
+    height: 80vh;
+    > div {
+      margin: 0%;
+    }
+  }
+  .fbasket-header {
+    padding: 35px 0px;
+  }
+  .fbasket-cont {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: flex-start;
+    margin: 0% 6%;
+    >:nth-child(1){
+      max-height: 350px;
+      margin-right: 4%;
+      overflow-y: scroll;
+    }
+  }
+  .fbassm-none {
+    display: block;
+    width: auto;
+    background-color: white;
+    p{
+        @include flex(row,space-between);
+        margin: 5% 0%;
+    }
+    .fbass-total{
+        border-top: 1px solid #828282;
+        padding-top: 13px;
+    }
+    border-radius: 8px;
+    padding: 4%;
+  }
+  .fbasket-cards {
+    width: 94%;
+    height: max-content;
+    padding: 3% 1%;
+    margin-bottom: 5%;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .del-basket {
+      position: static;
+    //   top: 4%;
+    //   right: 4%;
+    }
+    .fbasket-details{
+        @include flex(row,flex-start);
+        gap: 15px;
+    }
+    .fbasket-sale{
+        margin-left: 0%
+    }
+    .fbasket-img {
+      @include flex(row, center);
+      img{
+        height: 15vh;
+      }
+    }
+    .fbasket-info {
+      width: 90%;
+      margin: 0;
+      text-align: left;
+    }
+    .fbasket-counter {
+      position: static;
+    //   bottom: 5%;
+    //   right: 15%;
+      @include flex(row, center);
+      span {
+        margin: 0% 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.forget-pass {
+  color: #3366ff;
+  text-align: end;
+}
+
+@include lg {
+  .login {
+    @include flex(row, space-between);
+    margin: 3% 6%;
+    > * {
+      width: 40%;
+    }
+  }
+}

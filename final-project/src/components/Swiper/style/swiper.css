@@ -1,0 +1,12 @@
+.bck {
+  display: flex;
+  height: 76vh;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../images/bck.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bck p {
+  width: 80%;
+}

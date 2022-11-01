@@ -1,0 +1,59 @@
+.cont {
+  background-image: url("../images/bck.jpg");
+  background-position: initial;
+
+  background-size: cover;
+}
+#my-swiper {
+  margin: 0%;
+  padding: 0%;
+  height: 52vh;
+}
+.bck {
+  display: flex;
+  height: 52vh;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  text-align: center;
+  img {
+    width: 60%;
+  }
+  h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+  p {
+    width: 70%;
+    padding-left: 15%;
+    text-align: center;
+  }
+}
+@include lg {
+  #my-swiper {
+    height: 76vh;
+  }
+  .bck {
+    height: 68vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    p {
+      width: 80%;
+      padding: 0px;
+      text-align: left;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 64px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

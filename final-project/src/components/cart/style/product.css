@@ -1,0 +1,22 @@
+#thumbnail-div {
+  overflow: hidden;
+}
+
+.img-galery {
+  width: 70%;
+}
+.img-galery .carousel-img {
+  width: 100%;
+}
+
+.carousel-container {
+  background-color: white;
+}
+
+.product-cont {
+  margin: 0% 6%;
+}
+
+.cart-cost {
+  font-size: 12px;
+}

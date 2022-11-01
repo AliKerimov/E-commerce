@@ -1,0 +1,43 @@
+.phones,
+.watch,
+.all-acc {
+  background: #c4c4c4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4.43243px;
+  margin: 1% 4%;
+  position: relative;
+}
+.phones .allp-texts,
+.watch .allp-texts,
+.all-acc .allp-texts {
+  padding: 4%;
+}
+
+.phones {
+  margin-bottom: 40px;
+  height: 50vh;
+}
+.phones .allp-img {
+  height: 64%;
+}
+
+.watch,
+.all-acc {
+  height: 36vh;
+  margin-bottom: 40px;
+}
+.watch .allp-img,
+.all-acc .allp-img {
+  height: 50%;
+}
+
+.allp-img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.allp-component > div img {
+  margin-right: 10px;
+}

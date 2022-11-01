@@ -1,0 +1,15 @@
+$media:(
+    "sm":667.98px,
+    // "md":991.98px,
+    "lg":667.98px,
+);
+@mixin sm {
+    @media (max-width:map-get($media,"sm")) {
+        @content
+    }
+}
+@mixin lg {
+    @media (min-width:map-get($media,"lg")) {
+        @content
+    }
+}

@@ -1,0 +1,25 @@
+.adds{
+    margin: 3% 4%;
+    border-radius: 4px;
+    img{
+        width: 100%
+    }
+}
+
+.adds>div{
+    @include flex(row,center);
+    gap: 4%;
+}
+
+@include lg{
+    .adds{
+        @include flex(row,space-between);
+        gap: 6%;
+        >div{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

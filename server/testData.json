@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Apple  iPhone 12",
+    "price": 3012,
+    "categories": ["Telefon", "Apple", "Ən çox satılanlar"],
+    "images":"ksjsjks",
+    "discount": true,
+    "size": "64gb",
+    "color": "Purple"
+  },
+  {
+    "name": "Samsung S10",
+    "price": 1200,
+    "categories": ["Telefon", "Samsung", "Ən çox satılanlar"],
+    "discount": false,
+    "size": "256gb",
+    "color": "gray"
+  },
+  {
+    "name": "Nokia X10",
+    "price": 1360,
+    "categories": ["Telefon", "Nokia", "Ən çox satılanlar"],
+    "images":"ksjsjks",
+    "discount": true,
+    "size": " 64 GB",
+    "color": "Deep Green"
+  },
+  {
+    "name": "Xiaomi Poco M3  ",
+    "price": 1360,
+    "categories": ["Telefon", "Xiaomi", "Ən çox satılanlar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": " 128Gb ",
+    "color": "Yellow"
+  },
+
+  {
+    "name": "iPhone 13 Pro Max ",
+    "price": 4669,
+    "categories": ["Telefon", "Apple", "Yeni gələn Məhsullar"],
+    "images":"ksjsjks",
+    "discount": true,
+    "size": "1 TB",
+    "color": "Sierra Blue"
+  },
+  {
+    "name": "iPhone 13",
+    "price": 2629,
+    "categories": ["Telefon", "Apple", "Yeni gələn Məhsullar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": " 256 GB",
+    "color": "Midnight"
+  },
+  {
+    "name": "Honor 10",
+    "price": 799.9,
+    "categories": ["Telefon", "Honor", "Yeni gələn Məhsullar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": " 128 GB",
+    "color": "Midnight Black"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold3 ",
+    "price": 4199,
+    "categories": ["Telefon", "Samsung", "Yeni gələn Məhsullar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": " 128 GB",
+    "color": "Green"
+  },
+
+  {
+    "name": "Apple Iphone MagSafe to USB-C Cable",
+    "price": 89.99,
+    "categories": ["Qulaqlıq", "Apple", "Aksesuar"],
+    "images":"ksjsjks",
+    "discount": true,
+    "size": "",
+    "color": "White"
+  },
+  {
+    "name": "Apple Air Tag Leather Loop ",
+    "price": 109.9,
+    "categories": ["Qulaqlıq", "Apple", "Aksesuar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": "",
+    "color": "Red"
+  },
+  {
+    "name": "Apple AirPods Max Green",
+    "price": 1279,
+    "categories": ["Qulaqlıq", "Apple", "Aksesuar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": "",
+    "color": "Gray"
+  },
+  {
+    "name": "Apple AirPods Pro with Wireless Charging Case",
+    "price": 549.9,
+    "categories": ["Qulaqlıq", "Apple", "Aksesuar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": "",
+    "color": "White"
+  },
+  {
+    "name": "Samsung A50",
+    "price": 1160,
+    "categories": ["Telefon", "Samsung", "Aksesuar"],
+    "images":"ksjsjks",
+    "discount": false,
+    "size": " 128 GB",
+    "color": "Black"
+  }
+]

@@ -1,0 +1,381 @@
+#thumbnail-div {
+  overflow: hidden;
+}
+.img-galery {
+  width: 70%;
+}
+
+.carousel-container {
+  background-color: white !important;
+}
+
+.pr-count {
+  .pr-counter {
+    @include flex;
+    gap: 25px;
+    :nth-child(odd) {
+      background-color: #f2f2f2;
+      padding: 7% 17%;
+      border-radius: 50%;
+    }
+  }
+  margin-bottom: 32px;
+}
+.prev,
+.next {
+  color: black;
+}
+.product-cont {
+  margin: 8% 6%;
+}
+.cart-cost {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.endirim {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  color: $green-color;
+}
+.addp-basket {
+  width: 65%;
+  height: 5%;
+  background-color: $green-color;
+  color: white;
+  @include flex(row, center);
+  border-radius: 6px;
+  gap: 6px;
+}
+.pr-color,
+.pr-memory,
+.pr-count {
+  @include flex;
+  gap: 4%;
+  > p {
+    margin-right: 5px;
+  }
+}
+.pr-color {
+  > div {
+    cursor: pointer;
+    outline: #4f4f4f;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
+  
+}
+.pr-memory {
+  > div {
+    color: white;
+    border-radius: 6px;
+    padding: 2% 4%;
+    cursor: pointer;
+  }
+  > :nth-child(2) {
+    background-color: rgba(79, 79, 79, 1);
+  }
+  > :nth-child(3),
+  > :nth-child(5) {
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(79, 79, 79, 1);
+  }
+  > :nth-child(4) {
+    background-color: rgba(130, 130, 130, 1);
+  }
+}
+.product-det {
+  @include flex(row);
+  gap: 10px;
+  margin: 0% 6%;
+  > * {
+    width: 50%;
+    @include flex(row, center);
+    padding: 4%;
+  }
+}
+.focused-categories {
+  border-bottom: 3px solid $green-color;
+  color: $green-color;
+}
+.prodinf-txt {
+  color: rgba(79, 79, 79, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+.tech-inf {
+  margin: 0% 6%;
+  color: rgba(130, 130, 130, 1);
+  > span {
+    color: rgba(79, 79, 79, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  > div {
+    @include flex(row, space-between);
+    margin: 3% 3%;
+  }
+}
+.pr-info > p {
+  margin: 5% 6%;
+  color: rgba(130, 130, 130, 1);
+}
+.pr-count {
+  > .pr-count {
+    @include flex;
+    gap: 6%;
+  }
+}
+.comment {
+  border-bottom: 1px solid rgba(196, 196, 196, 1) !important;
+  padding: 10% 0%;
+  h2 {
+    @include flex(row, center);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 20px;
+  }
+  > :nth-child(1) {
+    > :nth-child(2) {
+      width: 100%;
+      @include flex(row, center);
+      * {
+        border-bottom: 1px solid rgba(196, 196, 196, 1);
+        padding: 5% 0%;
+      }
+    }
+  }
+  > :nth-child(2) {
+    > :nth-child(1) {
+      @include flex(row, center);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: rgba(79, 79, 79, 1);
+    }
+    > :nth-child(2) {
+      @include flex(row, center);
+      color: rgba(79, 79, 79, 1);
+    }
+    > :nth-child(3) {
+      margin: 0% 6%;
+    }
+  }
+}
+.send-comment {
+  > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    @include flex(row, center);
+  }
+  form {
+    margin: 0% 6%;
+    > div {
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      select {
+        margin-bottom: 20px;
+        padding: 4% 4%;
+        border: none;
+        width: 100%;
+        border-radius: 8px;
+        background-color: rgba(242, 242, 242, 1);
+      }
+      input,
+      textarea {
+        margin-bottom: 20px;
+        padding: 4% 4%;
+        border: none;
+        width: 92%;
+        border-radius: 8px;
+        background-color: rgba(242, 242, 242, 1);
+      }
+    }
+  }
+}
+.comments-btn {
+  @include flex(row, flex-end);
+  > p {
+    background-color: $green-color;
+    width: 45%;
+    border-radius: 8px;
+    color: white;
+    padding: 4% 0%;
+    @include flex(row, center);
+  }
+}
+.techinf-det {
+  display: none;
+}
+@include lg {
+  .product-cont {
+    margin: 3% 6%;
+    display: flex;
+    > :nth-child(1) {
+      width: 55%;
+      .img-galery {
+        width: 100%;
+      }
+    }
+  }
+  .productinf > :nth-child(1) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .productinf > :nth-child(2) {
+    margin-bottom: 10px;
+    @include flex;
+    span{
+      margin-left: 6px;
+    }
+    > :nth-child(2) {
+      color: #4f4f4f;
+    }
+    > :nth-child(3) {
+    color: rgba(45, 156, 219, 1);
+    }
+
+  }
+  .productinf > :nth-child(3) {
+    @include flex;
+    gap: 15px;
+    .endirim {
+      color: #db2c66;
+    }
+  }
+  .pr-color {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 15px;
+    margin-top: 10px;
+    gap: 2%;
+    // > div {
+    //   width: 5%;
+    // }
+  }
+  .pr-memory {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    > div {
+      padding: 1% 3%;
+    }
+  }
+  .pr-info {
+    display: none;
+  }
+  .pr-count {
+    .pr-counter {
+      @include flex;
+      gap: 25px;
+      :nth-child(odd) {
+        background-color: #f2f2f2;
+        padding: 7% 17%;
+        border-radius: 50%;
+      }
+    }
+    > :nth-child(1) {
+      display: none;
+    }
+    margin-bottom: 32px;
+  }
+  .product-det {
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .focused-categories {
+    border: none;
+  }
+  .product-det > * {
+    padding: 4px 2%;
+    width: 20%;
+  }
+  .techinf-det {
+    display: block;
+    > :nth-child(1) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #4f4f4f;
+    }
+    > :nth-child(2) {
+      margin: 4% 4%;
+      color: rgba(130, 130, 130, 1);
+    }
+  }
+  .technical-cont {
+    display: flex;
+    gap: 10%;
+    margin: 2% 6%;
+    > div {
+      width: 40%;
+    }
+  }
+  .comment {
+    @include flex;
+    margin: 0% 6%;
+    padding: 2% 4%;
+    > :nth-child(1) {
+      border-right: 1px solid #bdbdbd;
+      padding-right: 10px;
+    }
+  }
+  .send-comment {
+    width: 60%;
+    margin: 0 auto;
+    > p {
+      margin-top: 30px;
+    }
+    form {
+      margin: 6% 6%;
+      > :nth-child(1) {
+        @include flex;
+        gap: 8%;
+        > * {
+          width: 46%;
+        }
+      }
+      > div {
+        select {
+          margin-bottom: 30px;
+          padding: 3% 2%;
+          width: 100%;
+          border-radius: 8px;
+        }
+        input,
+        textarea {
+          margin-bottom: 30px;
+          padding: 3% 2%;
+          width: 96%;
+        }
+      }
+    }
+  }
+  .comments-btn > p {
+    padding: 2% 0%;
+    width: 25%;
+  }
+  #smborder-none {
+    border: none;
+  }
+  #cmnt-name,
+  #cmnt-det,
+  #cmnt-inf {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1% 4%;
+  }
+}

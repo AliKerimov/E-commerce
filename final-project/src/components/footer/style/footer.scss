@@ -1,0 +1,108 @@
+.footer {
+  background-color: $black-bck;
+  color: white;
+}
+.footer > :first-child {
+  margin: 0% 6%;
+}
+.footer-child {
+  @include flex(column, center);
+  // margin: 0px
+}
+.footer-child > p {
+  margin: 2px 0px;
+  color: $gray;
+}
+.footer-info > :first-child {
+  padding: 20px 0px;
+  gap: 10px;
+  div {
+    @include flex;
+    gap: 22px;
+  }
+}
+.contact > p {
+  @include flex;
+  // padding: 0px;
+  // margin: 0px !important;
+}
+.copyright > div {
+  width: 100%;
+  @include flex(space-around, space-between);
+  gap: 10px;
+}
+h4 {
+  font-size: 20px;
+}
+.copyright {
+  @include flex(column-reverse, center);
+  color: $gray;
+}
+#contact {
+  display: block;
+  gap: 8px;
+}
+#contact > p {
+  p {
+    margin-left: 15px;
+  }
+}
+#contact > h4 {
+  text-align: center;
+}
+.last-sec {
+  padding: 20px 0px;
+}
+.green-txt {
+  color: $green-color;
+}
+@include lg {
+  .footer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0px;
+  }
+  .footer-info > :first-child {
+    padding: 0px;
+  }
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+  #contact {
+    gap: 0px;
+    h4 {
+      text-align: left;
+    }
+  }
+  .copyright > :nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 17px;
+    *{
+      cursor: pointer;
+    }
+  }
+  .copyright {
+    @include flex(row, space-between);
+  }
+  h4 {
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+  }
+  p {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+  }
+  .footer-child {
+    align-items: initial;
+    display: block;
+    >div{
+      *{cursor: pointer;}
+    }
+    p {
+      margin: 12px 0px 12px 0px;
+      cursor: pointer;
+    }
+  }
+}

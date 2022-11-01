@@ -1,0 +1,70 @@
+.acces-cards {
+    margin: 0% 4%;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0px;
+    .acces-card {
+      padding:1% 2%;
+      background: #ffffff;
+      // border: 1px solid gray;
+      height: 299px;
+      box-shadow: 0px 4px 8px rgba(164, 164, 164, 0.36);
+      border-radius: 4px;
+    }
+  }
+  
+  .cost{
+      color: #828282;
+      text-decoration: line-through;
+  }
+  .sale{
+      color: #DB2C66;
+  }
+  
+  .see-all{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .acces{
+      margin-top: 20px;
+  }
+  .see-acces{
+      @include flex(row,left);
+      margin-left: 4%;
+  
+  }
+  @include lg{
+      .acces-cards{
+          overflow-x: hidden;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          gap: 4%;
+          grid-template-columns: repeat(4,1fr);
+          .acces-card{
+              padding: 11% 0%;
+              display: grid;
+              justify-content: center;
+            //   max-height: 268px;
+            img{
+                width: 50%;
+            }
+          }
+      }
+      .acces-phone{
+          @include flex(row,center);
+          width: 100%;
+      }
+      .acces{
+          position: relative;
+      }
+      .see-all{
+          position: absolute;
+          bottom: 92%;
+          left: 86%;
+      }
+  }
+  

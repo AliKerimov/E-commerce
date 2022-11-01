@@ -1,0 +1,73 @@
+@import 'media.scss';
+@import 'variable.scss';
+@import 'mixin.scss';
+@import '../components/header/style/navbar.scss';
+@import '../components/footer/style/footer.scss';
+@import '../components/credit/style/credit.scss';
+@import '../components/Swiper/style/swiper.scss';
+@import '../components/newAcces/style/newacces.scss';
+@import '../components/Allproducts/style/allprod.scss';
+@import '../components/sponsors/style/sponsors.scss';
+@import '../components/adds/style/adds.scss';
+@import '../components/basket/style/basket.scss';
+@import '../components/Allproducts/style/allprod.scss';
+@import '../components/Productspage/style/products.scss';
+@import '../components/cart/style/product.scss';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+@import '../components/loader/style/loader.scss';
+@import '../components/Signin/style/signin.scss';
+@import '../components/login/style/login.scss';
+
+@import '../components/myprofile/style/myprofile.scss';
+// @import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+body{
+    padding: 0px;
+    font-family: 'Euclid Circular A', sans-serif;
+    margin: 0px;
+    font-size: 14px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.carousel-image{
+    width: 50% !important;
+    margin: 0% 25% !important;
+    object-fit: contain !important;
+}
+#thumbnail-div{
+    width: 100% !important;
+    margin: 30px 0% !important;
+}
+.img-galery{
+    width: 100% !important;
+}
+.block{
+    display: block;
+}
+button:disabled{
+    opacity: 0.35;
+}
+input:focus{
+    outline: none !important;
+  }
+  .input-error{
+    border:1px solid red !important;
+  }
+.none{display: none;}
+@include lg{
+    // .carousel-image{
+    //     width: 60% !important;
+    //     margin: 0% 20% !important;
+    // }
+    #thumbnail-div{
+        width: 85% !important;
+        margin: 0% 0% 0% 3% !important;
+    }
+}
+
+
+

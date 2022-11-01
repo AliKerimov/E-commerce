@@ -1,0 +1,16 @@
+.mySwiper {
+  height: 15vh;
+  margin: 0% 15%;
+  padding: 4% 0%;
+}
+
+.sponsors {
+  background-color: #F5F5F7;
+}
+
+.sponsor {
+  background-color: white;
+  padding: 4px;
+  border-radius: 4px;
+  height: 10vh;
+}
